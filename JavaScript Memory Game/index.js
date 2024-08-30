@@ -33,20 +33,37 @@ document.addEventListener("DOMContentLoaded", (event) => {
       }, 1000);
     }
   
+    // function restartGame() {
+    //   gameOverContainer.classList.remove("show");
+  
+    //   timeLeft = 60;
+    //   timerElement.textContent = "Time left: 1:00";
+    //   clearInterval(timer);
+    //   timerStarted = false;
+
+    //   clickedCards = [];
+    //   matchedCards = 0;
+    // }
+  
+
     function restartGame() {
-      gameOverContainer.classList.remove("show");
-  
-      timeLeft = 60;
-      timerElement.textContent = "Time left: 1:00";
-      clearInterval(timer);
-      timerStarted = false;
-  
-      
-  
-      clickedCards = [];
-      matchedCards = 0;
-    }
-  
+        gameOverContainer.classList.remove("show");
+
+        timeLeft = 60;
+        timerElement.textContent = "Time left: 1:00";
+        clearInterval(timer);
+        timerStarted = false;
+
+    
+        cards.forEach((card, index) => {
+          card.querySelector(".card-front").textContent =
+            shuffledNumbers[index];
+          card.classList.remove("flipped");
+        });
+
+        clickedCards = [];
+        matchedCards = 0;
+      }
     function endGame(isWin) {
       console.log("endGame called with isWin:", isWin);
       gameOverMessage.textContent = isWin
