@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+body {
+  font-family: "DM Mono", monospace;
+  background-color: #f3f1f5;
+}
+#card {
+  width: 400px;
+  height: 90px;
+}
+#code {
+  font-size: 50px;
+  padding: 20px;
+  background-color: #fff;
+  line-height: 40px;
+  font-weight: 800;
+}
+canvas {
+  cursor: url("https://essykings.github.io/JavaScript/coin42.png") 50 50,
+    pointer;
+}
