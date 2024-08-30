@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+body {
+  background-color: rgb(247, 248, 249);
+   font-family: "DM Mono", monospace;
+}
+canvas {
+  border: 1px solid rgb(33, 32, 32);
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: crosshair;
+}
+h1{
+  font-weight:600;
+}
