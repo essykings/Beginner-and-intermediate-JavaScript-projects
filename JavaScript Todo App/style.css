@@ -1,0 +1,111 @@
+body {
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  
+  .message {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+  .container {
+    padding: 60px 50px;
+    margin-top: 100px;
+    width: 650px;
+    height: 500px;
+    position: relative;
+    /* overflow: scroll; */
+  }
+  .search-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .search-box input {
+    width: 100%;
+    height: 30px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    background: rgb(41, 39, 39);
+    border: none;
+    color: #fff;
+    margin-left: 30px;
+  }
+  .search-box button {
+    border-radius: 50%;
+    padding: 10px 10px;
+    background: rgb(206, 7, 7);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .tasks {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tasks li {
+    margin-top: 10px;
+    padding: 20px 10px;
+    background: rgb(28, 25, 28);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .tasks li span {
+    display: flex;
+    flex-basis: 60%;
+  }
+  .tasks li .buttons {
+    display: flex;
+    flex-basis: 30%;
+  }
+  
+  .tasks li .buttons button {
+    color: #fff;
+    background: transparent;
+    border: none;
+  }
+  .buttons button i {
+    color: rgb(175, 16, 16);
+    font-size: 20px;
+  }
+  
+  .tasks input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    outline: none;
+    box-shadow: 0 0 5px #999;
+    transition: box-shadow 0.3s ease;
+  }
+  .tasks input[type="radio"]:checked {
+    background-color: #bfb9b9;
+  }
+  
+  .strike-through {
+    /* -webkit-text-stroke: 2px rgb(179, 186, 179); */
+    text-decoration: line-through;
+  }
+  .complete {
+    background-color: #bfb9b9;
+  }
+  .disabled {
+    disabled: true;
+  }
+  
