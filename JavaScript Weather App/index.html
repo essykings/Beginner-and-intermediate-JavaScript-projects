@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Weather APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+        <div class="container">
+          <div class="date">
+      
+            <p>Wednesday, 21st Feb 2024</p>
+          </div>
+          <div class="location">
+            <input type="text" placeholder="Enter city" />
+            <button class="fa-solid fa-magnifying-glass"></button>
+          </div>
+      
+          <section class="weather hidden">
+            <img src="" alt="" />
+            <span class="cityName">Rome</span>
+            <span class="description">clear clouds</span>
+            <span class="temp">23°C</span>
+      
+          </section>
+      
+          <section class="weather-details hidden">
+            <div class="wind">
+              <p>Wind</p>
+              <i class="fa-solid fa-wind"></i>
+              <p class="speed">6.17</p>
+            </div>
+            <div class="humidity">
+              <p>Humidity</p>
+              <i class="fa-solid fa-droplet"></i>
+              <p id="humidity">40</p>
+            </div>
+            <div class="feeling">
+              <p>Feels</p>
+              <i class="fa-solid fa-temperature-three-quarters"></i>
+              <p id="feeeling">20°C</p>
+            </div>
+        </div>
+        </section>
+        <script src="index.js"></script>
+</body>
+</html>
