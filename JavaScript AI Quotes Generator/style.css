@@ -1,0 +1,79 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+:root {
+  --background:#45A29E;
+  --black: #0B0C10;
+  --grey: #f0f0f0;
+  --primary: #66FCF1;
+  --hover:#34908b;
+  --category-color:#e2cfcf;
+}
+body {
+  background: var(--black);
+  color: #fff;
+  font-family: "DM Mono", monospace;
+}
+h1{
+  color: var(--primary);
+}
+h5 {
+  color: #000;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.separator {
+  padding: 25px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.separator::before,
+.separator::after {
+  content: "";
+  height: 2px;
+  width: 30%;
+  background-color: #66FCF1;
+  position: absolute;
+  top: 50%;
+}
+.separator::before {
+  left: 10%;
+}
+.separator::after {
+  right: 10%;
+}
+
+
+.btn-check + .btn {
+  color: var(--category-color);
+
+}
+#generate {
+  background-color: var(--background);
+  color: #000;
+  width: 50%;
+  border: none;
+}
+#generate:hover{
+  background-color: var(--hover);
+
+
+}
+
+.btn-check:checked + .btn {
+  background-color: var(--background); 
+
+}
+.btn-check:hover + .btn {
+  background-color: var(--background); 
+  
+}
+
+
+#loader,
+.message {
+  display: none;
+}
