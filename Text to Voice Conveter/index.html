@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text to Voice Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="message"></div>
+    <div class="container">
+      <header>
+        <h1>Text to Voice Converter</h1>
+      </header>
+
+      <label for="content">Enter your Text:</label>
+      <textarea
+        class="content"
+        name="text"
+        id="content"
+        cols="60"
+        rows="10"
+      ></textarea>
+      <label for="lang">Choose the Language:</label>
+
+      <select name="voices" class="select-voices"></select>
+
+      <button class="convert">Convert Text to Voice</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

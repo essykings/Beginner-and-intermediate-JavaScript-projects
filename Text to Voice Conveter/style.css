@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+:root {
+  --white: #ffffff;
+  --orange: #df790b;
+  --red: #f00d0d;
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+body {
+  background: var(--white);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  margin-top: 200px;
+  min-height: 100vh;
+  font-family: "DM Mono", monospace;
+}
+.message {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--red);
+  font-weight: 500;
+}
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+h1 {
+  font-size: 50px;
+}
+textarea {
+  background: var(--white);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+
+  box-shadow: 0px 19px 38px 0px var(--shadow);
+  box-shadow: var() 0px 5px 15px;
+  width: 100%;
+  max-width: 100%;
+  line-height: 1.5;
+}
+.select-voices {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+
+textarea:focus {
+  outline: none;
+}
+label {
+  font-size: 1.5rem;
+}
+button {
+  width: 100%;
+  padding: 20px;
+  background: var(--orange);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 20px;
+  gap: 2rem;
+}
+.message {
+  display: none;
+  text-align: center;
+}
