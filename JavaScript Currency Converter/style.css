@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  body {
+    background-color: #454545;
+    color: black;
+  }
+  header {
+    margin-bottom: 20px;
+  }
+  .container {
+    margin: auto;
+    height: 100vh;
+    background-color: #363434;
+    border-radius: 20px;
+    border: 10px solid black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .currency-container {
+    height: fit-content;
+    background-color: #9dc183;
+    padding: 20px 20px;
+    border-radius: 20px;
+  }
+
+  .currency {
+    margin-top: 50px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 150px;
+    border: 0.5px solid black;
+    border-radius: 20px;
+    padding: 0px 20px;
+  }
+
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #amount {
+    width: 400px;
+    padding: 10px 6px;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 18px;
+  }
+  #amount:focus {
+    border: 2px solid purple;
+  }
+
+  .select-option {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 8px;
+    height: 50px;
+    display: block;
+    font-weight: 700;
+    line-height: 1.3;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  button {
+    margin: 20px;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+  }
+  .result {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .error {
+    color: #800020;
+    font-size: 12px;
+  }
+  .key {
+    margin-bottom: 60px;
+    color: aqua;
+    /* background-color: white; */
+  }
+
+  /* Media query for small screens */
+  @media only screen and (max-width: 600px) {
+    .select-option {
+      width: 100%;
+      font-size: 10px;
+    }
+
+    #amount {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .box {
+      width: 100%;
+      padding: 0px 10px;
+    }
+    body {
+      font-size: 12px;
+    }
+
+    .container p,
+    .container label,
+    .container input,
+    .container select,
+    .container span,
+    .container button,
+    .container .result {
+      font-size: 12px;
+    }
+  }
