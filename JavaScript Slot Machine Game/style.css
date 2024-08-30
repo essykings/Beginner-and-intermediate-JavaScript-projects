@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+body {
+  background: linear-gradient(#000, #555);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "DM Mono", monospace;
+}
+
+.slot-machine {
+  text-align: center;
+  color: #ecf0f1;
+  padding: 25px;
+  border: 5px solid #333;
+  background: #222;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  width: 350px;
+  height: 500px;
+}
+.header {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #333;
+  border-radius: 10px;
+  border: 2px solid #444;
+}
+.header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #f39c12;
+}
+.header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+.reels-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+.reel {
+  width: 100px;
+  height: 150px;
+  background-color: #3a3a3a;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1),
+    -5px -5px 5px rgba(200, 200, 200, 0.2) inset,
+    5px 5px 5px rgba(50, 50, 50, 0.3) inset;
+}
+.symbol {
+  font-size: 3em;
+  height: 60px;
+  opacity: 0.6;
+}
+.controls {
+  margin-top: 20px;
+  padding: 10px;
+  background: #333;
+  border-radius: 10px;
+  border: 2px solid #444;
+}
+.controls .spin_btn {
+  padding: 12px 24px;
+  font-size: 1.5em;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1),
+    -5px -5px 5px rgba(200, 200, 200, 0.2) inset,
+    5px 5px 5px rgba(50, 50, 50, 0.3) inset;
+}
+
+.controls .spin_btn:hover {
+  box-shadow: inset 8px 8px 15px rgba(0, 0, 0, 0.8),
+    inset -8px -8px 15px rgba(150, 150, 150, 0.4);
+}
+
+.controls .spin_btn:active {
+  transform: translateY(2px);
+}
+
+.controls .message {
+  font-size: 1.5em;
+  color: #f39c12;
+}
