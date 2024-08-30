@@ -1,4 +1,4 @@
-// Uploading to Chrome
+# Uploading to Chrome
 
 - In your Chrome browser, navigate to Chrome’s extensions page. You can also go directly to `chrome://extensions/`.
 - At the top right, enable **Developer mode**.
